@@ -17,7 +17,8 @@ Script to check a phantom scan for eddy distortions affecting the b=0 volumes
 
 A series of slices in the middle of the phantom are extracted for all b=0 volumes in the
 data. The first one, b0_1, is the reference. The second one, b0_2 follows immediately and
-serves as a reference. The remaining b=0 volumes follow b>0 volumes.
+serves as a reference for registration error under noise but without (hopefully) motion or eddy (definitely) issues. 
+The remaining b=0 volumes follow b>0 volumes.
 
 Each slice from each b=0 volume is registered to the same slice in the first b=0 volume.
 
